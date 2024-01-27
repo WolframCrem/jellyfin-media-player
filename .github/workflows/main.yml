@@ -11,9 +11,9 @@ jobs:
   build-mac:
     runs-on: macos-11
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v3
     - name: Install Qt 5.15.2
-      uses: jurplel/install-qt-action@v4
+      uses: jurplel/install-qt-action@v3
       with:
         version: "5.15.2"
         modules: "qtwebengine"
@@ -42,9 +42,9 @@ jobs:
   build-win64:
     runs-on: windows-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v3
     - name: Install Qt 5.15.2
-      uses: jurplel/install-qt-action@v4
+      uses: jurplel/install-qt-action@v3
       with:
         version: "5.15.2"
         arch: "win64_msvc2019_64"
@@ -88,9 +88,9 @@ jobs:
   build-win32:
     runs-on: windows-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v3
     - name: Install Qt 5.15.2
-      uses: jurplel/install-qt-action@v4
+      uses: jurplel/install-qt-action@v3
       with:
         version: "5.15.2"
         arch: "win32_msvc2019"
