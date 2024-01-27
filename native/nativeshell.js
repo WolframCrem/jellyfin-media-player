@@ -170,6 +170,7 @@ function getDeviceProfile() {
     }
 
     return {
+        
         'Name': 'Jellyfin Media Player',
         'MaxStaticBitrate': 1000000000,
         'MaxStreamingBitrate': 2400000000,
